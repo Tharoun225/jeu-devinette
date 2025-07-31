@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jeu de Devinette Magique</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="game-container">
+            <h1>🔮 Devinette Magique</h1>
+            <p>Devine le nombre mystère entre 1 et 20</p>
+            <input type="number" id="guess" placeholder="Ta proposition" />
+            <button onclick="verifierNombre()">Deviner</button>
+            <button id="btn-rejouer" onclick="rejouer()" style="display: none;">🔁 Rejouer</button>
+            <p id="message"></p>
+            <p id="essais"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
